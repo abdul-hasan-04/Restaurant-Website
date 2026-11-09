@@ -34,7 +34,7 @@ A modern restaurant ordering and management application built with React, Vite, 
 ### 1. Clone the repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/abdul-hasan-04/Restaurant-Website.git
 ```
 
 ### 2. Navigate to the project
