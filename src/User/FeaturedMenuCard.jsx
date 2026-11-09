@@ -43,6 +43,7 @@ function FeaturedMenuCard({ menu }) {
 
     }, [user?.id])
     const handleLike = async menu => {
+        if(!user?.id) return;
         if (isLiking) return;
         setIsLiking(true);
         const nextLike = !isLiked;
