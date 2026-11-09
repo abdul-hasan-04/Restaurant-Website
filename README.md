@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Villet Chef Restaurant
 
 A modern restaurant ordering and management application built with React, Vite, Supabase, and Tailwind CSS.
@@ -72,3 +73,7 @@ npm run dev      # Start development server
 npm run build    # Build for production
 npm run preview  # Preview production build
 npm run lint
+=======
+# Restaurant-Website
+A modern restaurant ordering and management system built with React, Vite, Supabase, and Tailwind CSS. Features customer authentication, menu browsing, shopping cart, checkout, order tracking, and an admin dashboard for managing restaurant operations.
+>>>>>>> origin/main
