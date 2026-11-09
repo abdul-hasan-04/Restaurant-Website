@@ -1,0 +1,135 @@
+
+@import "tailwindcss";
+
+/* ==============================
+   LIGHT MODE — FRESH GREEN & WHITE
+================================ */
+:root {
+  color-scheme: light;
+
+  /* Backgrounds */
+  --background-color: #F8FBF8;
+  --surface-color: #FFFFFF;
+  --card-color: #EEF7F0;
+
+  /* Text */
+  --text-color: #12312B;
+  --muted-text-color: #61766F;
+
+  /* Primary — Fresh Restaurant Green */
+  --primary-color: #168747;
+  --primary-hover-color: #116C38;
+  --on-primary-color: #FFFFFF;
+
+  /* Accent — Natural Green */
+  --accent-color: #278B65;
+  --success-color: #16A765;
+
+  /* Borders and Inputs */
+  --border-color: #E0EBE3;
+  --input-color: #FFFFFF;
+  --focus-color: #168747;
+
+  /* Semantic Colors */
+  --secondary-color: #35574A;
+  --warning-color: #A16207;
+  --danger-color: #DC3545;
+
+  /* Shadows */
+  --shadow-color: 18, 72, 43;
+}
+
+/* ==============================
+   DARK MODE — DEEP FOREST GREEN
+================================ */
+html[data-theme="dark"] {
+  color-scheme: dark;
+
+  /* Backgrounds */
+  --background-color: #101B17;
+  --surface-color: #17251F;
+  --card-color: #20372B;
+
+  /* Text */
+  --text-color: #F1F7F2;
+  --muted-text-color: #A9BDB0;
+
+  /* Primary — Bright Natural Green */
+  --primary-color: #35B86B;
+  --primary-hover-color: #48CC7D;
+  --on-primary-color: #FFFFFF;
+
+  /* Accent */
+  --accent-color: #5DD6A0;
+  --success-color: #4ADE80;
+
+  /* Borders and Inputs */
+  --border-color: #30483A;
+  --input-color: #17251F;
+  --focus-color: #48CC7D;
+
+  /* Semantic Colors */
+  --secondary-color: #C4D9CB;
+  --warning-color: #FACC15;
+  --danger-color: #FDA4AF;
+
+  /* Shadows */
+  --shadow-color: 0, 0, 0;
+}
+
+/* ==============================
+   TAILWIND CSS V4 THEME
+================================ */
+/* stylelint-disable-next-line at-rule-no-unknown */
+@theme {
+  --color-background: var(--background-color);
+  --color-surface: var(--surface-color);
+  --color-card: var(--card-color);
+
+  --color-text: var(--text-color);
+  --color-muted: var(--muted-text-color);
+
+  --color-primary: var(--primary-color);
+  --color-primary-hover: var(--primary-hover-color);
+  --color-on-primary: var(--on-primary-color);
+
+  --color-accent: var(--accent-color);
+  --color-success: var(--success-color);
+
+  --color-border: var(--border-color);
+  --color-input: var(--input-color);
+  --color-focus: var(--focus-color);
+
+  --color-secondary: var(--secondary-color);
+  --color-warning: var(--warning-color);
+  --color-danger: var(--danger-color);
+
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+
+  --animate-fade-in-up: fade-in-up 0.6s ease-out;
+}
+
+/* ==============================
+   REACT TOASTIFY
+================================ */
+.restaurant-toast {
+  height: 50px !important;
+  min-height: 50px !important;
+  padding: 8px 12px !important;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.restaurant-toast-progress,
+.Toastify__progress-bar,
+.Toastify__progress-bar--error {
+  opacity: 0 !important;
+  outline: none !important;
+  border: none !important;
+  visibility: hidden !important;
+}
+
+.Toastify__toast-icon svg {
+  fill: currentColor;
+}
