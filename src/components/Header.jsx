@@ -137,13 +137,13 @@ function Header() {
                 </div>
                 {/* ONLY IN LARGE SCREENS */}
                 <div className={`avatar  ${isprofileMenuOpen ? "*:border-2 *:border-text" : ""}`} onClick={() => setIsprofileOpen(!isprofileMenuOpen)}>
-                  <Avatar name={profile?.full_name} backgroundColor={"primary"} textColor='text' />
+                  <Avatar name={profile?.full_name || user?.email || "User"} backgroundColor={"primary"} textColor='text' />
                 </div>
                 {/* HUMBUGER MENU FOR ONLY SMALL SCREENS  */}
                 {isprofileMenuOpen && (
                   <div className="profile_menu_dropDown flex flex-col gap-1 md:max-w-sm w-full items-start  md:right-0 right-0  md:mx-10 lg:mx-12 top-16 absolute p-3 rounded-md shadow-xl border-text/20 border bg-background z-50">
                     <div className='user_profile flex gap-2'>
-                      <Avatar name={profile?.full_name} backgroundColor={"primary"} textColor='text' />
+                      <Avatar name={profile?.full_name || user?.email || "User"} backgroundColor={"primary"} textColor='text' />
                       {/* user_profile_details.... */}
                       <div className="user_info_text text-xs">
                         <h3 className='font-semibold'>{profile?.full_name}</h3>
@@ -182,7 +182,7 @@ function Header() {
                   <Link to={"auth/login"} className='hover:bg-surface py-1 px-3 border rounded-full'>Sign In</Link>
                   <Link to={"auth/register"} className='bg-text text-background py-1 px-3 rounded-full'>Get Started</Link>
                 </div>
-                <button className='text-xs cursor-pointer bg-background border border-text/20 px-2 py-1.5 rounded-full flex items-center gap-2' onClick={handleSignWithGoogle}>SignIn With Google <FcGoogle className='text-lg' /></button>
+                <button className='text-xs hidden lg:flex cursor-pointer bg-background border border-text/20 px-2 py-1.5 rounded-full items-center gap-2' onClick={handleSignWithGoogle}>Sign In With Google <FcGoogle className='text-lg' /></button>
                 {isMobileMenuOpen ? <IoCloseSharp className='sm:hidden text-lg' onClick={() => setIsMobileMenuOpen(false)} /> : <FaBars className='sm:hidden text-lg' onClick={() => setIsMobileMenuOpen(true)} />}
               </>
             )
@@ -202,7 +202,7 @@ function Header() {
               <div className="btns_container flex flex-col *:w-full lg:hidden items-center gap-2.5 text-sm *:cursor-pointer">
                 <Link to={"auth/login"} className='hover:bg-surface text-center py-2 px-3 border rounded-full'>Sign In</Link>
                 <Link to={"auth/register"} className='bg-text text-center text-background py-2 px-3 rounded-full'>Get Started</Link>
-                <button className='text-xs cursor-pointer bg-background border border-text/20 px-2 py-1.5 rounded-full flex items-center gap-2' onClick={handleSignWithGoogle}>SignIn With Google <FcGoogle className='text-lg' /></button>
+                <button className='text-xs cursor-pointer bg-background border border-text/20 px-2 py-2 w-full justify-center text-center rounded-full flex items-center gap-2' onClick={handleSignWithGoogle}>Sign In With Google <FcGoogle className='text-lg' /></button>
               </div>
             </div>
           )}

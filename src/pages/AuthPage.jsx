@@ -10,8 +10,8 @@ function AuthPage({isLoggin}) {
     const isDark = theme === "dark";
     return (
         <section className="signUp min-h-screen bg-background text-text lg:h-screen lg:overflow-hidden">
-            <div className="min-h-screen lg:flex lg:h-full">
-                <aside className={`left_side relative hidden flex-1 flex-col justify-between overflow-hidden p-10 text-white md:p-14 lg:flex lg:p-16 ${isDark ? "bg-[#101812]" : "bg-[#243b2b]"}`}>
+            <div className="h-full lg:flex lg:h-full">
+                <aside className={`left_side relative hidden lg:flex-col justify-between overflow-hidden p-10 text-white md:p-14 lg:flex lg:p-16 ${isDark ? "bg-[#101812]" : "bg-[#243b2b]"}`}>
                     <img
                         src={foodImageForAuth}
                         alt="A freshly prepared restaurant meal"
@@ -40,7 +40,7 @@ function AuthPage({isLoggin}) {
                     </div>
                 </aside>
 
-                <main className="right-side flex min-h-screen flex-1 flex-col justify-center p-6 sm:p-10 md:p-14 lg:min-h-0 lg:p-16">
+                <main className="right-side flex flex-1 h-dvh flex-col justify-center p-6 sm:p-10 md:p-14 lg:min-h-0 lg:p-16">
                     <div className="mx-auto w-full max-w-md">
                         <div className="mb-10 lg:hidden">
                             <button type="button" onClick={() => navigate("/")} aria-label="Go to home" className="rounded-xl bg-text/5 p-2">

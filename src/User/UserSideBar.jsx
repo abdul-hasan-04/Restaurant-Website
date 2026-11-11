@@ -26,6 +26,7 @@ function UserSideBar({ isOpen, setIsOpen, mobile = false}) {
             <div className="links_container flex-1 font-black flex flex-col gap-2 min-h-0 p-8  overflow-y-auto">
               {/* link item */}
               <NavLink to={"/dashboard/user"}
+                onClick={handleNavigate}
                 end
                 className={({ isActive }) => `py-2 text-sm px-2 flex items-center gap-3 rounded-md  ${isActive ? "bg-text font-semibold text-background" : ""}`}> <HomeIcon className='w-4' /> {isOpen ? "Home" : ""} </NavLink>
               <NavLink

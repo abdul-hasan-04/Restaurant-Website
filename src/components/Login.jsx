@@ -36,7 +36,7 @@ function Login() {
 
     }
     return (
-        <div className="signUpForm_container flex flex-col gap-6 h-screen justify-center">
+        <div className="signUpForm_container  flex flex-col gap-6 h-screen justify-center">
             <Link to={"/"} className='text-sm flex gap-2 items-center'><FaArrowLeftLong />Back to home</Link>
             <div className="text_container flex flex-col gap-6">
                 <h2 className="welcome_text uppercase text-xs">Welcome Back</h2>
