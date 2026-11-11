@@ -61,7 +61,7 @@ function UserOrdePage() {
 
   const filteredOrderItems = orders.filter((item) => item.order_number.includes(searchedValue))
   return (
-    <div className="user_order_pag flex flex-col gap-8">
+    <div className="user_order_pag flex flex-col gap-8 py-4 md:py-6 lg:py-8">
       <div className="top">
         <div className="head flex justify-between items-center">
           <div className="title flex gap-4 items-center">

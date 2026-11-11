@@ -34,7 +34,7 @@ function UserDashboard() {
           mobile={true}
         />
       </aside>
-        <div className="MainBar w-full bg-background lg:col-span-3 p-8 md:p-6 lg:p-8 overflow-y-auto h-[calc(100vh-68px)]">
+        <div className="MainBar w-full bg-background lg:col-span-3 p-4 md:p-6 lg:p-8 overflow-y-auto h-[calc(100vh-68px)]">
           {/* CONTENT GOES HERE */}
           <Outlet />
         </div>
