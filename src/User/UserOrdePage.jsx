@@ -61,7 +61,7 @@ function UserOrdePage() {
 
   const filteredOrderItems = orders.filter((item) => item.order_number.includes(searchedValue))
   return (
-    <div className="user_order_pag flex flex-col gap-8 py-4 md:py-6 lg:py-8">
+    <div className="user_order_pag flex flex-col gap-8">
       <div className="top">
         <div className="head flex justify-between items-center">
           <div className="title flex gap-4 items-center">
@@ -123,7 +123,7 @@ function UserOrdePage() {
         />
         <SearchIcon className="w-4 absolute top-1/2 -translate-y-1/2 left-3" />
       </div>
-      <div className="order_containerList flex gap-5 flex-col">
+      <div className="order_containerList flex gap-5 flex-col mb-8">
         {isLoading ? (
           <h2>Loading....</h2>
         ) : filteredOrderItems.length > 0 ? (
