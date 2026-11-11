@@ -123,7 +123,7 @@ function UserOrdePage() {
         />
         <SearchIcon className="w-4 absolute top-1/2 -translate-y-1/2 left-3" />
       </div>
-      <div className="order_containerList flex gap-5 flex-col mb-8">
+      <div className="order_containerList flex gap-5 flex-col">
         {isLoading ? (
           <h2>Loading....</h2>
         ) : filteredOrderItems.length > 0 ? (

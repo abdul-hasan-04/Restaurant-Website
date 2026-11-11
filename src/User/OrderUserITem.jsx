@@ -27,7 +27,7 @@ function OrderUserITem({order,expandedOrderId,setExpandedOrderId}) {
 
   return (
      <div
-              className={`order bg-card px-4 py-2 flex flex-col gap-3 rounded-md shadow-2xl border border-text/10`}
+              className={`order bg-card px-4 py-2 mb-8 flex flex-col gap-3 rounded-md shadow-2xl border border-text/10`}
               key={order?.id}
             >
               <div className="header flex justify-between items-center">
